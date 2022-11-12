@@ -55,27 +55,8 @@ class BlankFragment : Fragment() {
                     "При этом манул — замечательный охотник. В этом ему помогает способность устраивать засады и\n " +
                     "оставаться неподвижным долгое время.")
         }
-
         return view
-
     }
-
-    fun erevan(view: View) {
-
-        fragmentSendDataListener!!.onSendData("Эрик ")
-    }
-
-
-
-
-    fun china(view: View) {
-        fragmentSendDataListener!!.onSendData("Эрик chort")
-    }
-
-    fun chort(view: View) {
-        fragmentSendDataListener!!.onSendData("Эрик chort")
-    }
-
 
 }
 
