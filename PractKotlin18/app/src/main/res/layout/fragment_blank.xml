@@ -19,7 +19,8 @@
             android:layout_margin="3dp"
             android:layout_weight="1"
 
-            android:src="@drawable/erevanskie_kuri"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ls"
             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     </LinearLayout>
@@ -33,11 +34,12 @@
         <ImageButton
             android:id="@+id/imageButton7"
             android:layout_width="wrap_content"
-            android:onClick="test"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_weight="1"
-            android:src="@drawable/china_kuri"
+            android:onClick="test"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
