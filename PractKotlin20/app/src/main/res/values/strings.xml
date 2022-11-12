@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practice20</string>
+    <string name="startThread">Запустить поток</string>
+    <string name="endThread">Остановить поток</string>
+</resources>

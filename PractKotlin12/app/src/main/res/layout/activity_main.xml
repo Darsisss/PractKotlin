@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageViewMain"
+        android:layout_width="340dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewMain"
+        app:layout_constraintStart_toStartOf="@+id/imageViewMain"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMain">
+
+        <RadioButton
+            android:id="@+id/radioButtonApple"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonApple_Click"
+            android:text="Яблоко" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPear"
+            android:textColor="@color/black"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonPearClick"
+            android:text="Груша" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGrape"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="radioButtonGrape_Click"
+            android:text="Виноград" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBoxApple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkBoxApple_Click"
+        android:textColor="@color/black"
+        android:text="Яблоко"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkBoxPear_Click"
+        android:textColor="@color/black"
+        android:text="Груша"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxApple"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxApple" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGrape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkBoxGrape_Click"
+        android:textColor="@color/black"
+        android:text="Виноград"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxPear"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxPear" />
+
+    <ImageView
+        android:id="@+id/imageViewApple"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPear"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPear"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGrape"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewPear"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewGrape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGrape"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewGrape"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPear"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxGrape"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
